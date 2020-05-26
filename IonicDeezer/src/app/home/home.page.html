@@ -1,0 +1,33 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      DeezerApp
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">DeezerApp</ion-title>
+    </ion-toolbar>
+
+    <ion-toolbar>
+      <ion-searchbar type="text" placeholder="Artiste" (keyup.enter)="onSearchArtist($event)"></ion-searchbar>
+     </ion-toolbar>
+  </ion-header>
+
+
+  <!--div id="container">
+    <ion-card *ngFor="let data of dataSearchArtist.data">
+      <img class="card-img" [src]="data.picture">
+      <ion-card-header>
+        <ion-card-title class="card-title">{{ data.name }}</ion-card-title>
+      </ion-card-header>
+    </ion-card>
+    <strong>Ready to create an app?</strong>
+    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+  </div-->
+</ion-content>
